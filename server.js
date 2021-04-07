@@ -7,7 +7,7 @@ const { strict } = require('assert');
 var app = express()
 var http = require('http').Server(app) //binding express with node server
 var io = require('socket.io')(http) // binding socket io with express via node http server
-var dbUrl = "mongodb+srv://user:user@node-chat.ziuf5.mongodb.net/node-chat?retryWrites=true&w=majority"
+var dbUrl = "paste your mongoDB url"
 
 app.use(express.static(__dirname))
 app.use(bodyparser.json())
